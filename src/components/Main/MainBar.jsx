@@ -1,20 +1,41 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "./MainBar.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
+import { CiDark } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 
 const MainBar = () => {
   
   const {onSend,recentPrompt,showResult,loading,resultData,setInput,input} = useContext(Context)
   
+  // const [themeChange,setThemeChange] = useState(false)
   
+//   const darkMode = () =>{
+//       const root = document.querySelector('#root');
+      
+//   }
+ 
+
+//  useEffect(() => {
+//     themeChange ? 'false' : 'true';
+//  },[themeChange])
+
   return (
   
     <div className="main">
       
       <nav className="navBar">
         <p>Gemini</p>
-        <img src={assets.user_icon} alt="" />
+        {/* <div className="right-section">
+              <div className="light" onClick={(e) => lightMode()}>
+                <CiDark/>
+              </div>
+              <div className="dark" onClick={(e) => darkMode()}>
+                <MdDarkMode />
+              </div> */}
+            <img src={assets.user_icon} alt="" />
+        {/* </div> */}
       </nav>
 
       <div className="main-container">
