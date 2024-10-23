@@ -1,3 +1,6 @@
+Developed a Google Gemini clone using React.js, focused on providing a robust search functionality specifically for text-based information. The application allows users to perform natural language searches within a variety of text formats, delivering relevant results efficiently.
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
